@@ -50,7 +50,7 @@ def predict():
     elif single==1:
         o1 = "The pump diagnosed is severe"
         o2 = "Confidence: {}".format(probablity*100)
-    elif single==0:
+    elif single==2:
         o1 = "The pump diagnosed is mild"
         o2 = "Confidence: {}".format(probablity*100)
     else:
