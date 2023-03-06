@@ -13,23 +13,23 @@ html>
 		  <form action="{{ url_for('predict')}}" method="POST">
 		  	<div class="col-sm-9">
 			 <div class="form-group  purple-border">
-				  <label for="comment">texture_mean:</label>
+				  <label for="comment">mean:</label>
 				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5" autofocus>{{query1}}</textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">perimeter_mean:</label>
+				  <label for="comment">max:</label>
 				  <textarea class="form-control" rows="2" id="query2" name="query2" rows="2" cols="5" autofocus>{{query2}}</textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">smoothness_mean:</label>
+				  <label for="comment">kurtosis:</label>
 				  <textarea class="form-control" rows="2" id="query3" name="query3" rows="2" cols="5" autofocus>{{query3}}</textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">compactness_mean:</label>
+				  <label for="comment">variance:</label>
 				  <textarea class="form-control" rows="2" id="query4" name="query4" rows="2" cols="5" autofocus>{{query4}}</textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">symmetry_mean:</label>
+				  <label for="comment">onenorm:</label>
 				  <textarea class="form-control" rows="2" id="query5" name="query5" rows="2" cols="5" autofocus>{{query5}}</textarea>
 			</div>
 			</div>
