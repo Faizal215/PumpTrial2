@@ -4,7 +4,7 @@ A simple implementation of ML for breast cancer prediction with Python. The main
 
 This is an updated clone that runs with Python 3.10.
 
-The dataset is pulled from [https://raw.githubusercontent.com/apogiatzis/breast-cancer-azure-ml-notebook/master/breast-cancer-data.csv](https://raw.githubusercontent.com/Faizal215/PumpTrial2/main/data.csv)
+The dataset is pulled from [(https://raw.githubusercontent.com/Faizal215/FYP-Test1/main/data.csv)]
 
 
 ## Interface with Azure as a web app
