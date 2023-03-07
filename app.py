@@ -44,17 +44,11 @@ def predict():
     single = model.predict(new_df)
     probablity = model.predict_proba(new_df)[:,1]
     
-    if single==0:
-        o1 = "The pump diagnosed is healthy"
-        o2 = "Confidence: {}".format(probablity*100)
-    elif single==1:
-        o1 = "The pump diagnosed is severe"
-        o2 = "Confidence: {}".format(probablity*100)
-    elif single==2:
-        o1 = "The pump diagnosed is mild"
+    if single==1:
+        o1 = "The pump diagnosed is health"
         o2 = "Confidence: {}".format(probablity*100)
     else:
-        o1 = "The pump  diagnosed is mild2"
+        o1 = "The patient diagnosed with mild"
         o2 = "Confidence: {}".format(probablity*100)
         
     return render_template('home.html', output1=o1, output2=o2, query1 = request.form['query1'], query2 = request.form['query2'],query3 = request.form['query3'],query4 = request.form['query4'],query5 = request.form['query5'])
